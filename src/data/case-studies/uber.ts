@@ -3,8 +3,8 @@ import type { CaseStudy } from "@/lib/types";
 export const uber: CaseStudy = {
   slug: "uber",
   company: "Uber",
-  productName: "Uber for Business",
-  productUrl: "https://www.uber.com/us/en/business/sign-up/",
+  productName: "Uber Ads",
+  productUrl: "https://www.uber.com/us/en/advertising/",
   role: "Senior Product Analyst",
   period: "March 2019 – June 2020",
   location: "San Francisco, CA",
