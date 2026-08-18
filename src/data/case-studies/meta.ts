@@ -9,13 +9,14 @@ export const meta: CaseStudy = {
   period: "June 2017 – December 2018",
   location: "Menlo Park, CA",
   tagline: "Proving a ~30% revenue lift for Meta's highest-spend advertisers",
-  overview:
-    "Meta's cross-border commerce tools help SMB advertisers reach new customers internationally using AI-optimized campaigns, localized creative, and market-specific intelligence. I owned experimentation and measurement for Facebook's highest-value, highest-spend advertisers within this program.",
-  highlights: [
-    "Led programmatic A/B test design and measurement for high-value, high-spend advertisers, applying winsorization and regression adjustment to keep outlier spend from distorting results — outcomes included a ~30% revenue increase.",
-    "Standardized the analytics process with propensity score matching, replacing ad hoc measurement with a repeatable method that BI partner teams could run globally.",
-    "Built dashboards and pipelines that surfaced real-time cross-border ad-sales opportunities, scaling the approach across SMB ads sales teams worldwide.",
-  ],
+  problem:
+    "Meta was launching a new cross-border ads capability for its highest-spend SMB advertisers, and leadership needed to know if it was actually driving incremental revenue — not just correlated with growth from advertisers who were already spending more.",
+  decision:
+    "I decided a standard before/after comparison wasn't trustworthy given how skewed and volatile high-spend advertiser data is, so I pushed for a causal measurement framework — winsorization and regression adjustment, later propensity score matching — instead of the simpler approach the team had been using.",
+  execution:
+    "I designed and ran the experiment measurement for the launch, then standardized the method with propensity score matching so BI partner teams could reuse it globally, and built the dashboards and pipelines that surfaced real-time cross-border opportunities to SMB ads sales teams.",
+  outcome:
+    "The launch was validated with a ~30% revenue increase, and the measurement framework became the SMB team's standard playbook — scaled globally across BI partner teams.",
   metrics: [
     { label: "~30% revenue increase", highlight: true },
     { label: "Method scaled globally across BI partner teams" },

@@ -14,8 +14,10 @@ export type CaseStudy = {
   period: string;
   location: string;
   tagline: string;
-  overview: string;
-  highlights: string[];
+  problem: string;
+  decision: string;
+  execution: string;
+  outcome: string;
   metrics: Metric[];
   accent: Accent;
 };

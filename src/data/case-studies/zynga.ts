@@ -9,13 +9,14 @@ export const zynga: CaseStudy = {
   period: "March 2015 – June 2017",
   location: "San Francisco, CA",
   tagline: "Turning funnel analysis into a 40% jump in ads match rate",
-  overview:
-    "FarmVille 2: Tropic Escape is Zynga's tropical-island farming sim on iOS, Android, and Facebook. I worked on the analytics and instrumentation behind soft-launches and live-ops, running the A/B tests that shaped how games in this portfolio monetized and retained players.",
-  highlights: [
-    "Ran and analyzed extensive A/B tests on mobile and web games to optimize player experience and lifetime value.",
-    "Verified logging and instrumentation for major soft-launches, and created daily scorecards that became the template for other Zynga game launches.",
-    "Investigated ad-tech flow and game engagement issues, increasing ads match rate by 40% through funnel analysis and identifying user-decay segments tied to tech/performance issues.",
-  ],
+  problem:
+    "Titles in Zynga's portfolio were leaking engagement and ad revenue after soft-launch. The team suspected tech and performance issues but didn't have instrumentation solid enough to prove where players were actually dropping off.",
+  decision:
+    "I decided to verify and rebuild the logging and instrumentation before trusting any soft-launch data, rather than let the team optimize against numbers that might be broken — and to trace the ads match-rate problem back through the player funnel instead of treating it as a pure ad-tech issue.",
+  execution:
+    "I ran the A/B tests to optimize player experience and lifetime value, verified instrumentation for major soft-launches, and built the daily scorecards used to track them. From there, I used funnel analysis to identify user-decay segments tied to tech and performance issues that were dragging down ads match rate.",
+  outcome:
+    "Ads match rate increased 40%, and the scorecard framework I built became the template other Zynga game launches used going forward.",
   metrics: [
     { label: "+40% ads match rate", highlight: true },
     { label: "Scorecard template adopted for other launches" },

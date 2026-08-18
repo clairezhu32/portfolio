@@ -9,14 +9,14 @@ export const learneo: CaseStudy = {
   period: "July 2020 – March 2023",
   location: "Redwood City, CA",
   tagline: "Scaling a data science team 2 → 10 and rebuilding the matching engine behind Course Hero",
-  overview:
-    "Course Hero, Learneo's flagship study platform, matches students with course-specific study resources, AI-assisted answers, and expert tutors. I built and led the data science team behind the product and growth analytics that powered it.",
-  highlights: [
-    "Built and led a high-performing data science team, scaling from 2 to 10 members, delivering insights across UX, market recommendations, marketplace optimization, user engagement, and growth analytics.",
-    "Diagnosed and rebuilt Course Hero's semantic matching system — the engine connecting students to the right study resources — serving hundreds of thousands of students; the rebuild increased match accuracy by ~10% and lifted revenue ~3%.",
-    "Established robust A/B testing standards and statistical rigor, raising experiment reliability and decision-making confidence across the organization.",
-    "Directed analytics strategy and dashboards, surfacing key business drivers that shaped the product roadmap and growth initiatives.",
-  ],
+  problem:
+    "Course Hero's system for matching students to study resources was underperforming — serving hundreds of thousands of students but not surfacing the right materials consistently, which put both engagement and revenue at risk.",
+  decision:
+    "I decided to rebuild the semantic matching system rather than patch the existing one, judging that the underlying matching logic — not surface-level ranking tweaks — was the ceiling on quality.",
+  execution:
+    "I diagnosed the failure modes in the existing system and led the rebuild, scaling the data science team from 2 to 10 to support it and the broader analytics agenda — UX, market recommendations, marketplace optimization, and growth. I also put A/B testing standards in place so the team's experiment results could be trusted across the org.",
+  outcome:
+    "Match accuracy improved ~10% and revenue lifted ~3%. The analytics org I built scaled from 2 to 10 people and became the source of truth product and engineering leaned on for roadmap decisions.",
   metrics: [
     { label: "Team scaled 2 → 10", highlight: true },
     { label: "+10% match accuracy" },

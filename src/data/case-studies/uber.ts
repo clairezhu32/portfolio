@@ -9,15 +9,14 @@ export const uber: CaseStudy = {
   period: "March 2019 – June 2020",
   location: "San Francisco, CA",
   tagline: "From an opportunity-sizing memo to a company-wide experimentation standard",
-  overview:
-    "At Uber, I worked on the measurement backbone behind Uber's advertising and marketplace products — including the earliest opportunity-sizing work for what became Uber Ads. That work started as a memo presented to CEO Dara Khosrowshahi and the first A/B test validating the ads concept; it grew into one of Uber's major product lines.",
-  highlights: [
-    "Led the initial opportunity sizing for Uber Ads and presented findings to CEO Dara Khosrowshahi; designed the first A/B experiment validating the ads concept.",
-    "Conducted advanced measurement and causal analysis for Uber Ads in a marketplace setting, designing experiments with standardized power analyses.",
-    "Led the company-wide A/B testing review task force, establishing consistent experimentation standards adopted across all Uber product teams — not just ads.",
-    "Built KPI scorecards and data-sharing systems adopted by product and engineering leadership for real-time business monitoring.",
-    "Managed a team of 2 analysts delivering dashboards, reports, and tracking verification across multiple concurrent initiatives.",
-  ],
+  problem:
+    "Uber didn't have an advertising product, and it wasn't obvious the opportunity was big enough — or safe enough for the marketplace — to justify building one.",
+  decision:
+    "I led the opportunity-sizing analysis and made the case directly to CEO Dara Khosrowshahi that ads were worth testing. Rather than greenlighting a full build on sizing alone, I pushed to validate the concept with a live A/B experiment first.",
+  execution:
+    "I designed the first A/B experiment validating Uber Ads in a live marketplace setting, with standardized power analyses. As other teams began running inconsistent experiments off the back of that success, I led a company-wide task force to standardize A/B testing methodology, and built the KPI scorecards and data-sharing systems product and engineering leadership used for real-time monitoring — managing a team of 2 analysts delivering the dashboards and tracking behind these initiatives.",
+  outcome:
+    "Uber Ads became one of Uber's major product lines, and the experimentation standard I led was adopted company-wide — not just within ads.",
   metrics: [
     { label: "Experimentation standard adopted org-wide", highlight: true },
     { label: "Opportunity-sizing work presented to CEO" },

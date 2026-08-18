@@ -5,7 +5,7 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { CaseStudyHeader } from "@/components/case-study/header";
 import { CaseStudyMetrics } from "@/components/case-study/metrics";
-import { CaseStudyHighlights } from "@/components/case-study/highlights";
+import { CaseStudyNarrative } from "@/components/case-study/narrative";
 import { MoreWork } from "@/components/case-study/more-work";
 
 export function generateStaticParams() {
@@ -37,14 +37,8 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
         <CaseStudyHeader study={study} />
         <section className="py-16">
           <div className="mx-auto max-w-3xl space-y-12 px-6">
-            <p className="text-lg leading-relaxed">{study.overview}</p>
             <CaseStudyMetrics study={study} />
-            <div>
-              <h2 className="font-display text-xl font-semibold">What I did</h2>
-              <div className="mt-6">
-                <CaseStudyHighlights study={study} />
-              </div>
-            </div>
+            <CaseStudyNarrative study={study} />
           </div>
         </section>
         <MoreWork currentSlug={study.slug} />
