@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #09090e;
+  --color-bg2: #111118;
+  --color-bg3: #18181f;
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-fg: #eeeef2;
+  --color-muted: #8888a0;
+  --color-dim: #555568;
+  --color-amber: #f5a623;
+  --color-amber2: #ffcf6b;
+  --color-green: #34d399;
+  --color-blue: #60a5fa;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-bg2: var(--color-bg2);
+  --color-bg3: var(--color-bg3);
+  --color-line: var(--color-line);
+  --color-fg: var(--color-fg);
+  --color-muted: var(--color-muted);
+  --color-dim: var(--color-dim);
+  --color-amber: var(--color-amber);
+  --color-amber2: var(--color-amber2);
+  --color-green: var(--color-green);
+  --color-blue: var(--color-blue);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-syne);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-dim);
+  border-radius: 9999px;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(245, 166, 35, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 166, 35, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
