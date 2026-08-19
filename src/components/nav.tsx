@@ -12,7 +12,7 @@ export function Nav() {
             About
           </Link>
           <Link href="/#impact" className="hover:text-fg">
-            Work
+            Product Portfolio
           </Link>
           <Link href="/#stack" className="hover:text-fg">
             Stack
