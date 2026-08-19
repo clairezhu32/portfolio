@@ -18,8 +18,10 @@ export function MoreWork({ currentSlug }: { currentSlug: string }) {
                 href={`/work/${study.slug}`}
                 className={`rounded-xl border border-line bg-bg2 p-5 transition ${accent.hoverBorder}`}
               >
-                <div className={`font-mono text-xs ${accent.text}`}>{study.company}</div>
-                <div className="mt-1 font-display font-semibold">{study.productName}</div>
+                <div className={`font-display text-xl font-bold ${accent.text}`}>
+                  {study.company}
+                </div>
+                <div className="mt-1 font-mono text-xs text-muted">{study.productName}</div>
               </Link>
             );
           })}

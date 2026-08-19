@@ -13,8 +13,10 @@ export function CaseStudyHeader({ study }: { study: CaseStudy }) {
           ← Back to all work
         </Link>
 
-        <div className={`mt-6 font-mono text-xs ${accent.text}`}>{study.company}</div>
-        <h1 className="mt-2 font-display text-4xl font-bold sm:text-5xl">{study.productName}</h1>
+        <h1 className={`mt-6 font-display text-5xl font-bold sm:text-6xl ${accent.text}`}>
+          {study.company}
+        </h1>
+        <p className="mt-2 font-mono text-sm text-muted">{study.productName}</p>
         <p className="mt-4 text-lg text-muted">{study.tagline}</p>
 
         <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs text-dim">

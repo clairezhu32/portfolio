@@ -40,10 +40,10 @@ export function ImpactGrid() {
                   />
                 </div>
                 <div className="p-6">
-                  <div className={`font-mono text-xs ${accent.text}`}>{study.company}</div>
-                  <h3 className="mt-2 font-display text-lg font-semibold">
-                    {study.productName}
-                  </h3>
+                  <div className={`font-display text-2xl font-bold sm:text-3xl ${accent.text}`}>
+                    {study.company}
+                  </div>
+                  <h3 className="mt-1 font-mono text-sm text-muted">{study.productName}</h3>
                   <p className="mt-2 text-sm text-muted">{study.tagline}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {study.metrics.slice(0, 2).map((metric) => (
