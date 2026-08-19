@@ -1,7 +1,9 @@
 import { SectionLabel } from "./section-label";
 
-// LinkedIn/GitHub links pending — add to this array once provided.
-const links: { label: string; href: string }[] = [];
+// LinkedIn link pending — add to this array once provided.
+const links: { label: string; href: string }[] = [
+  { label: "GitHub", href: "https://github.com/clairezhu32" },
+];
 
 export function ContactSection() {
   return (

@@ -5,6 +5,7 @@ export const uber: CaseStudy = {
   company: "Uber",
   productName: "Uber Ads",
   productUrl: "https://www.uber.com/us/en/advertising/",
+  image: "/case-studies/uber.jpg",
   role: "Senior Product Analyst",
   period: "March 2019 – June 2020",
   location: "San Francisco, CA",

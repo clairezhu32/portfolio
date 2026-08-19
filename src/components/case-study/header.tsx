@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { CaseStudy } from "@/lib/types";
 import { accentClasses } from "@/lib/accent";
 
@@ -30,6 +31,26 @@ export function CaseStudyHeader({ study }: { study: CaseStudy }) {
         >
           View product ↗
         </a>
+      </div>
+
+      <div className="mx-auto mt-10 max-w-4xl px-6">
+        <div className="overflow-hidden rounded-xl border border-line bg-bg2">
+          <div className="flex items-center gap-1.5 border-b border-line px-4 py-2.5">
+            <span className="h-2.5 w-2.5 rounded-full bg-dim/40" />
+            <span className="h-2.5 w-2.5 rounded-full bg-dim/40" />
+            <span className="h-2.5 w-2.5 rounded-full bg-dim/40" />
+          </div>
+          <div className="relative aspect-[1512/794] w-full">
+            <Image
+              src={study.image}
+              alt={`Screenshot of ${study.productName}`}
+              fill
+              sizes="(min-width: 1024px) 896px, 100vw"
+              className="object-cover object-top"
+              priority
+            />
+          </div>
+        </div>
       </div>
     </header>
   );

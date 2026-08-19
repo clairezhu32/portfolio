@@ -10,6 +10,7 @@ export type CaseStudy = {
   company: string;
   productName: string;
   productUrl: string;
+  image: string;
   role: string;
   period: string;
   location: string;

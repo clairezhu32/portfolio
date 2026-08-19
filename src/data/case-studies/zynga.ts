@@ -5,6 +5,7 @@ export const zynga: CaseStudy = {
   company: "Zynga",
   productName: "FarmVille 2: Tropic Escape",
   productUrl: "https://www.zynga.com/games/farmville-tropic-escape/",
+  image: "/case-studies/zynga.jpg",
   role: "Senior Data Analyst – Data Analyst",
   period: "March 2015 – June 2017",
   location: "San Francisco, CA",

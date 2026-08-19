@@ -5,6 +5,7 @@ export const meta: CaseStudy = {
   company: "Meta",
   productName: "Cross-Border Commerce (SMB Ads)",
   productUrl: "https://www.facebook.com/business/cross-border",
+  image: "/case-studies/meta.jpg",
   role: "SMB Data Scientist",
   period: "June 2017 – December 2018",
   location: "Menlo Park, CA",

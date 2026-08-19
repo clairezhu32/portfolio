@@ -5,6 +5,7 @@ export const learneo: CaseStudy = {
   company: "Learneo",
   productName: "Course Hero",
   productUrl: "https://www.coursehero.com/plans/",
+  image: "/case-studies/learneo.jpg",
   role: "Analytics Manager",
   period: "July 2020 – March 2023",
   location: "Redwood City, CA",

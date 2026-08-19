@@ -5,6 +5,7 @@ export const upstart: CaseStudy = {
   company: "Upstart",
   productName: "HELOC — Home Equity Line of Credit",
   productUrl: "https://heloc.upstartmortgage.com/",
+  image: "/case-studies/upstart.jpg",
   role: "Staff Data Scientist",
   period: "Sept 2024 – Current",
   location: "San Mateo, CA",

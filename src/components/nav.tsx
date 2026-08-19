@@ -8,6 +8,9 @@ export function Nav() {
           Claire Zhu
         </Link>
         <div className="hidden gap-8 font-mono text-sm text-muted sm:flex">
+          <Link href="/about" className="hover:text-fg">
+            About
+          </Link>
           <Link href="/#approach" className="hover:text-fg">
             Approach
           </Link>

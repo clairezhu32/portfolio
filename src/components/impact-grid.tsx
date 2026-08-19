@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { caseStudies } from "@/data/case-studies";
 import { accentClasses } from "@/lib/accent";
 import { SectionLabel } from "./section-label";
@@ -27,25 +28,38 @@ export function ImpactGrid() {
               <Link
                 key={study.slug}
                 href={`/work/${study.slug}`}
-                className={`group rounded-xl border border-line bg-bg2 p-6 transition ${accent.hoverBorder}`}
+                className={`group overflow-hidden rounded-xl border border-line bg-bg2 transition ${accent.hoverBorder}`}
               >
-                <div className={`font-mono text-xs ${accent.text}`}>{study.company}</div>
-                <h3 className="mt-2 font-display text-lg font-semibold">{study.productName}</h3>
-                <p className="mt-2 text-sm text-muted">{study.tagline}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {study.metrics.slice(0, 2).map((metric) => (
-                    <span
-                      key={metric.label}
-                      className={`rounded-full px-3 py-1 font-mono text-xs ${
-                        metric.highlight ? `${accent.bg} ${accent.text}` : "bg-bg3 text-muted"
-                      }`}
-                    >
-                      {metric.label}
-                    </span>
-                  ))}
+                <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-line">
+                  <Image
+                    src={study.image}
+                    alt={`Screenshot of ${study.productName}`}
+                    fill
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover object-top transition duration-300 group-hover:scale-105"
+                  />
                 </div>
-                <div className="mt-4 font-mono text-xs text-dim group-hover:text-fg">
-                  Read case study →
+                <div className="p-6">
+                  <div className={`font-mono text-xs ${accent.text}`}>{study.company}</div>
+                  <h3 className="mt-2 font-display text-lg font-semibold">
+                    {study.productName}
+                  </h3>
+                  <p className="mt-2 text-sm text-muted">{study.tagline}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {study.metrics.slice(0, 2).map((metric) => (
+                      <span
+                        key={metric.label}
+                        className={`rounded-full px-3 py-1 font-mono text-xs ${
+                          metric.highlight ? `${accent.bg} ${accent.text}` : "bg-bg3 text-muted"
+                        }`}
+                      >
+                        {metric.label}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-4 font-mono text-xs text-dim group-hover:text-fg">
+                    Read case study →
+                  </div>
                 </div>
               </Link>
             );
