@@ -33,7 +33,7 @@ export default function AboutPage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/#impact"
-                className="rounded-full bg-amber px-6 py-3 font-medium text-bg transition hover:bg-amber2"
+                className="rounded-full bg-amber px-6 py-3 font-medium text-white transition hover:bg-amber2"
               >
                 See my work ↓
               </Link>

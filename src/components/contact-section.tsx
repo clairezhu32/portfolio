@@ -23,7 +23,7 @@ export function ContactSection() {
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             href="mailto:clairehzhu@gmail.com"
-            className="rounded-full bg-amber px-6 py-3 font-medium text-bg transition hover:bg-amber2"
+            className="rounded-full bg-amber px-6 py-3 font-medium text-white transition hover:bg-amber2"
           >
             ✉ Send me an email
           </a>
