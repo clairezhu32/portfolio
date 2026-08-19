@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { caseStudies } from "@/data/case-studies";
 import { accentClasses } from "@/lib/accent";
-import { SectionLabel } from "./section-label";
 
 export function ImpactGrid() {
   return (
@@ -10,14 +9,12 @@ export function ImpactGrid() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <SectionLabel>selected impact</SectionLabel>
             <h2 className="font-display text-3xl font-bold sm:text-4xl">
-              Work that moved the needle
+              Data-driven product development
             </h2>
           </div>
           <p className="max-w-sm text-sm text-muted">
-            I don&apos;t just analyze systems — I diagnose them, redesign them, and build the
-            infrastructure that makes them better over time.
+            Combine qualitative intuition and data insights to drive product impact.
           </p>
         </div>
 
