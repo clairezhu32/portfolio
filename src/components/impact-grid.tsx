@@ -6,7 +6,7 @@ import { SectionLabel } from "./section-label";
 
 export function ImpactGrid() {
   return (
-    <section id="impact" className="border-t border-line py-24">
+    <section id="impact" className="py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>

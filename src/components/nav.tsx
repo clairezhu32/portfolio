@@ -11,9 +11,6 @@ export function Nav() {
           <Link href="/about" className="hover:text-fg">
             About
           </Link>
-          <Link href="/#approach" className="hover:text-fg">
-            Approach
-          </Link>
           <Link href="/#impact" className="hover:text-fg">
             Work
           </Link>
