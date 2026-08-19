@@ -3,25 +3,24 @@ import type { CaseStudy } from "@/lib/types";
 export const uber: CaseStudy = {
   slug: "uber",
   company: "Uber",
-  productName: "Uber Ads",
-  productUrl: "https://www.uber.com/us/en/advertising/",
+  productName: "Uber for Business",
+  productUrl: "https://www.uber.com/us/en/business/sign-up/",
   image: "/case-studies/uber.jpg",
   role: "Senior Product Analyst",
   period: "March 2019 – June 2020",
   location: "San Francisco, CA",
-  tagline: "From an opportunity-sizing memo to a company-wide experimentation standard",
+  tagline: "Turning ad hoc experimentation into a company-wide testing standard",
   problem:
-    "Uber didn't have an advertising product, and it wasn't obvious the opportunity was big enough — or safe enough for the marketplace — to justify building one.",
+    "Different teams across Uber were running A/B tests with inconsistent methodology, which made it hard for product and engineering leadership to trust results or compare experiments across initiatives.",
   decision:
-    "I led the opportunity-sizing analysis and made the case directly to CEO Dara Khosrowshahi that ads were worth testing. Rather than greenlighting a full build on sizing alone, I pushed to validate the concept with a live A/B experiment first.",
+    "Rather than let each team keep its own ad hoc approach, I pushed to standardize experimentation methodology — with consistent power analyses — across all product teams, and to give leadership a single, real-time view into business performance instead of team-by-team reporting.",
   execution:
-    "I designed the first A/B experiment validating Uber Ads in a live marketplace setting, with standardized power analyses. As other teams began running inconsistent experiments off the back of that success, I led a company-wide task force to standardize A/B testing methodology, and built the KPI scorecards and data-sharing systems product and engineering leadership used for real-time monitoring — managing a team of 2 analysts delivering the dashboards and tracking behind these initiatives.",
+    "I led the company-wide A/B testing review task force that set the standard for how experiments were designed and evaluated, and built the KPI scorecards and data-sharing systems that product and engineering leadership used for real-time business monitoring — managing a team of 2 analysts delivering the dashboards, statistical tracking, and reporting behind these initiatives.",
   outcome:
-    "Uber Ads became one of Uber's major product lines, and the experimentation standard I led was adopted company-wide — not just within ads.",
+    "The experimentation standard I led was adopted company-wide, and the scorecards became the way leadership monitored the business in real time across multiple concurrent initiatives.",
   metrics: [
     { label: "Experimentation standard adopted org-wide", highlight: true },
-    { label: "Opportunity-sizing work presented to CEO" },
-    { label: "Became one of Uber's major product lines" },
+    { label: "Real-time KPI scorecards adopted by leadership" },
   ],
   accent: "green",
 };
