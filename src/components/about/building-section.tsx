@@ -3,8 +3,8 @@ import Link from "next/link";
 const building = [
   {
     tag: "capstone",
-    title: "AI PM Bootcamp Capstone",
-    body: "A product spec tackling an AI-driven problem, combining data science depth with product management frameworks.",
+    title: "Master Key System",
+    body: "A self-improvement course digitized from Charles F. Haanel's 1919 classic, with goal-personalized exercises and an AI-generated 90-day action plan.",
     href: "/work/capstone",
   },
 ];

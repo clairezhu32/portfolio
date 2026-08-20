@@ -2,27 +2,28 @@ import type { CaseStudy } from "@/lib/types";
 
 export const capstone: CaseStudy = {
   slug: "capstone",
-  company: "AI PM Bootcamp",
-  productName: "AI-guided meditation for job seekers",
-  role: "Solo PM & builder — capstone project",
-  tagline: "Applying product frameworks to a personal wellness problem, end to end",
+  company: "Master Key System",
+  productName: "AI-personalized 12-week mental training course",
+  productUrl: "https://master-key-exercises.vercel.app/",
+  image: "/case-studies/capstone.jpg",
+  role: "Solo PM & builder — AI PM bootcamp capstone",
+  tagline: "Digitizing a 1919 self-help classic with an AI-generated personal action plan",
   problem:
-    "Job searching is one of the most stressful, uncertain experiences people go through — repeated rejection, long feedback gaps, and no clear sense of progress. As my AI PM bootcamp capstone, I wanted to explore whether an AI product could meaningfully reduce that stress, rather than just add another generic wellness app to track.",
+    "Charles F. Haanel's The Master Key System is a dense, 24-part self-improvement course originally delivered as one lesson per week by mail. Structured personal-development content like this tends to lose readers fast, because the material stays generic — it never adapts to what the specific reader is actually trying to achieve.",
   users:
-    "Job seekers actively searching, particularly those experiencing search-related anxiety, burnout, or motivation loss severe enough to affect how they show up in interviews and applications.",
-  optionsConsidered:
-    "I considered building a general-purpose meditation app and targeting job seekers as one niche among many, but that risked being generic — meditation content unrelated to what's actually stressing the user in the moment. I also considered a broader 'job search wellness' product covering things like resume help and interview prep alongside meditation, but that risked diluting the scope into something too broad to design well as a solo capstone.",
+    "People looking for structured mental training rather than one-off motivation — but generic lessons that don't connect to a reader's actual goal are easy to abandon once the content starts to feel abstract.",
   decision:
-    "I scoped the product narrowly: AI-generated, guided meditation sessions personalized to specific job-search stress triggers — pre-interview anxiety, post-rejection processing, application fatigue — rather than a general wellness app. The tradeoff is reach: a narrower, job-search-specific product has a smaller addressable audience than a general meditation app, but I judged the sharper problem-fit was worth proving out first.",
+    "I kept the full 24-exercise course free and accessible without an account (including a guest mode), and let users set a personal goal that reframes all 24 exercises around it — so the free experience does the work of proving the course is worth sticking with. I gated the deeper layer, an AI-generated 90-day action plan built from a 5-step goal intake, behind a paid tier. I also compressed Haanel's original 24-week pacing into 12 weeks, two parts at a time, while keeping his core rule intact: don't move on until the current exercise feels effortless and automatic.",
   execution:
-    "As a bootcamp capstone, this stayed at the product spec stage rather than shipping to real users — defining the core user journeys, the AI's role in personalizing each session, and how I'd measure whether it actually helped, applying the same product management frameworks (problem framing, user needs synthesis, scoping tradeoffs) I use in my day-to-day product work.",
+    "As a solo build, I implemented the exercise sequencing and progress tracking, the goal-personalization layer that reframes all 24 exercises around a user's stated goal, and the 5-step intake flow that feeds a user's goal and context to an AI strategist to generate the paid Master Plan — a staged 90-day action plan with metrics.",
   outcome:
-    "This is a product spec developed for my AI PM bootcamp, not yet a shipped or measured product. The natural next step is a small prototype test to validate the core premise — that job-search-specific content outperforms generic meditation content for this audience — before investing in a full build.",
+    "The course, goal-personalization, and AI-generated Master Plan are live at master-key-exercises.vercel.app. As a capstone without a marketing push behind it, the focus was proving the mechanism end-to-end — from a goal typed in by a user to a working, AI-generated plan — rather than growth metrics.",
   reflection:
-    "If I take this further, validating that core premise with a handful of real users would come before any additional scoping — it's the assumption the whole product bets on, and I haven't tested it yet.",
+    "The next real test is usage data I don't have yet: completion rates through the 24 exercises, and whether people who pay for the AI-generated Master Plan actually follow through on it. That would tell me whether the free-course-to-paid-AI-layer structure is the right wedge, or whether the paywall is in the wrong place.",
   metrics: [
-    { label: "AI PM Bootcamp capstone", highlight: true },
-    { label: "Product spec — not yet shipped" },
+    { label: "Live, shipped product", highlight: true },
+    { label: "AI-generated 90-day personalized plan" },
+    { label: "24-exercise course, solo-built" },
   ],
   accent: "blue",
 };
