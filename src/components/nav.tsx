@@ -17,6 +17,9 @@ export function Nav() {
           <Link href="/#stack" className="hover:text-fg">
             Stack
           </Link>
+          <a href="/resume.pdf" target="_blank" rel="noreferrer" className="hover:text-fg">
+            Resume
+          </a>
         </div>
         <Link
           href="/#connect"

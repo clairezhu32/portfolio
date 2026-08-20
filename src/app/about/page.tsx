@@ -7,7 +7,7 @@ import { AboutBuildingSection } from "@/components/about/building-section";
 export const metadata: Metadata = {
   title: "About Claire Zhu",
   description:
-    "Staff Data Scientist turned AI PM — 10+ years bridging analytics, experimentation, and product strategy across ads, fintech, marketplace, and consumer tech.",
+    "Staff Data Scientist turned AI PM — 10+ years bridging analytics, experimentation, and product strategy across ads, AI/ML products, marketplace, and consumer tech.",
 };
 
 export default function AboutPage() {
@@ -23,8 +23,8 @@ export default function AboutPage() {
             </p>
             <p className="mt-6 text-lg leading-relaxed">
               I turn data into products that matter. With 10+ years bridging analytics,
-              experimentation, and product strategy across ads, fintech, marketplace, and
-              consumer tech, I&apos;m now channeling that into building AI-powered products
+              experimentation, and product strategy across ads, AI/ML products, marketplace,
+              and consumer tech, I&apos;m now channeling that into building AI-powered products
               that solve real problems for real people. My edge is the full arc — from raw data
               and causal inference to product strategy, cross-functional execution, and
               measurable business impact. I don&apos;t just analyze systems; I diagnose them,

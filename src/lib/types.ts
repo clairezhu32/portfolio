@@ -16,9 +16,12 @@ export type CaseStudy = {
   location: string;
   tagline: string;
   problem: string;
+  users?: string;
+  optionsConsidered?: string;
   decision: string;
   execution: string;
   outcome: string;
+  reflection?: string;
   metrics: Metric[];
   accent: Accent;
 };

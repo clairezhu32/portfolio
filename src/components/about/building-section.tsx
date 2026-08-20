@@ -1,10 +1,5 @@
 const building = [
   {
-    tag: "active project",
-    title: "Clawbot Cooking",
-    body: "Using Clawbot and Claude Code to build a suite of AI-powered products and documenting the build process — architecture decisions, prompts, and code — openly on GitHub.",
-  },
-  {
     tag: "capstone",
     title: "AI PM Bootcamp Capstone",
     body: "A product spec tackling an AI-driven problem, combining data science depth with product management frameworks.",
@@ -22,9 +17,12 @@ export function AboutBuildingSection() {
     <>
       <div>
         <h2 className="font-mono text-xs tracking-wider text-amber/80">currently building</h2>
-        <div className="mt-6 grid gap-5 sm:grid-cols-2">
+        <div className="mt-6 grid gap-5">
           {building.map((item) => (
-            <div key={item.title} className="rounded-xl border border-line bg-bg2 p-6">
+            <div
+              key={item.title}
+              className="max-w-md rounded-xl border border-line bg-bg2 p-6"
+            >
               <div className="font-mono text-xs text-dim">{item.tag}</div>
               <h3 className="mt-2 font-display font-semibold">{item.title}</h3>
               <p className="mt-2 text-sm text-muted">{item.body}</p>

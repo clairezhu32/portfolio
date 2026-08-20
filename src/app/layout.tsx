@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Claire Zhu — Data-Drawn Product Builder",
   description:
-    "Staff Data Scientist turned AI PM — 10+ years bridging analytics, experimentation, and product strategy across ads, fintech, marketplace, and consumer tech.",
+    "Staff Data Scientist turned AI PM — 10+ years bridging analytics, experimentation, and product strategy across ads, AI/ML products, marketplace, and consumer tech.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
