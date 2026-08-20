@@ -1,8 +1,11 @@
+import Link from "next/link";
+
 const building = [
   {
     tag: "capstone",
     title: "AI PM Bootcamp Capstone",
     body: "A product spec tackling an AI-driven problem, combining data science depth with product management frameworks.",
+    href: "/work/capstone",
   },
 ];
 
@@ -19,14 +22,16 @@ export function AboutBuildingSection() {
         <h2 className="font-mono text-xs tracking-wider text-amber/80">currently building</h2>
         <div className="mt-6 grid gap-5">
           {building.map((item) => (
-            <div
+            <Link
               key={item.title}
-              className="max-w-md rounded-xl border border-line bg-bg2 p-6"
+              href={item.href}
+              className="max-w-md rounded-xl border border-line bg-bg2 p-6 transition hover:border-amber/40"
             >
               <div className="font-mono text-xs text-dim">{item.tag}</div>
               <h3 className="mt-2 font-display font-semibold">{item.title}</h3>
               <p className="mt-2 text-sm text-muted">{item.body}</p>
-            </div>
+              <div className="mt-3 font-mono text-xs text-amber">Read the case study →</div>
+            </Link>
           ))}
         </div>
       </div>

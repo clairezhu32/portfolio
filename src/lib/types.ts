@@ -9,11 +9,11 @@ export type CaseStudy = {
   slug: string;
   company: string;
   productName: string;
-  productUrl: string;
-  image: string;
+  productUrl?: string;
+  image?: string;
   role: string;
-  period: string;
-  location: string;
+  period?: string;
+  location?: string;
   tagline: string;
   problem: string;
   users?: string;

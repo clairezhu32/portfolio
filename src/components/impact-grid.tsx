@@ -14,7 +14,7 @@ export function ImpactGrid() {
             </h2>
           </div>
           <p className="max-w-sm text-sm text-muted">
-            Combine qualitative intuition and data insights to drive product impact.
+            I turn ambiguous, data-rich problems into shipped AI products.
           </p>
         </div>
 
@@ -28,13 +28,21 @@ export function ImpactGrid() {
                 className={`group overflow-hidden rounded-xl border border-line bg-bg2 transition ${accent.hoverBorder}`}
               >
                 <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-line">
-                  <Image
-                    src={study.image}
-                    alt={`Screenshot of ${study.productName}`}
-                    fill
-                    sizes="(min-width: 640px) 50vw, 100vw"
-                    className="object-cover object-top transition duration-300 group-hover:scale-105"
-                  />
+                  {study.image ? (
+                    <Image
+                      src={study.image}
+                      alt={`Screenshot of ${study.productName}`}
+                      fill
+                      sizes="(min-width: 640px) 50vw, 100vw"
+                      className="object-cover object-top transition duration-300 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className={`flex h-full w-full items-center justify-center ${accent.bg}`}>
+                      <span className={`font-display text-xl font-bold ${accent.text}`}>
+                        {study.company}
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6">
                   <div className={`font-display text-2xl font-bold sm:text-3xl ${accent.text}`}>
