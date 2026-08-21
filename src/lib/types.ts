@@ -8,12 +8,48 @@ export type Metric = {
 export type JourneyStage = {
   label: string;
   description: string;
+  emotion?: string;
 };
 
 export type ExternalReference = {
   label: string;
   href: string;
   caption: string;
+};
+
+export type Persona = {
+  name: string;
+  role: string;
+  bio: string;
+  goals: string[];
+  frustrations: string[];
+  discovery: string;
+  usage: string;
+};
+
+export type UserStory = {
+  story: string;
+  acceptanceCriteria: string;
+};
+
+export type Risk = {
+  type: string;
+  description: string;
+  remediation: string;
+};
+
+export type LeanCanvas = {
+  problem: string[];
+  solution: string[];
+  uniqueValueProp: string;
+  unfairAdvantage: string[];
+  customerSegments: string[];
+  existingAlternatives: string[];
+  keyMetrics: string[];
+  channels: string[];
+  earlyAdopters: string[];
+  costStructure: string[];
+  revenueStreams: string[];
 };
 
 export type CaseStudy = {
@@ -36,5 +72,10 @@ export type CaseStudy = {
   metrics: Metric[];
   journey?: JourneyStage[];
   reference?: ExternalReference;
+  personas?: Persona[];
+  userStories?: UserStory[];
+  risks?: Risk[];
+  pricingStrategy?: string;
+  leanCanvas?: LeanCanvas;
   accent: Accent;
 };

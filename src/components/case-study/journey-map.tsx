@@ -19,6 +19,11 @@ export function CaseStudyJourney({ study }: { study: CaseStudy }) {
                 {i + 1}
               </span>
               <h3 className="mt-3 font-display text-sm font-semibold">{stage.label}</h3>
+              {stage.emotion && (
+                <div className={`mt-1 font-mono text-[11px] italic ${accent.text}`}>
+                  {stage.emotion}
+                </div>
+              )}
               <p className="mt-1 text-xs leading-relaxed text-muted">{stage.description}</p>
             </div>
             {i < study.journey!.length - 1 && (
