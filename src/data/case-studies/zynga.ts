@@ -22,5 +22,12 @@ export const zynga: CaseStudy = {
     { label: "+40% ads match rate", highlight: true },
     { label: "Scorecard template adopted for other launches" },
   ],
+  journey: [
+    { label: "Discover", description: "Downloads via the App Store, Google Play, Facebook, or Amazon." },
+    { label: "Onboard", description: "Tutorial introduces farming, cooking, and the island setting." },
+    { label: "Core Loop", description: "Grows crops and cooks dishes to serve guests at the beachside inn." },
+    { label: "Explore & Trade", description: "Uncovers story quests and trades goods with neighboring islands." },
+    { label: "Retain", description: "Daily quests and ads/IAP sustain engagement over time." },
+  ],
   accent: "blue",
 };

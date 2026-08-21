@@ -5,6 +5,17 @@ export type Metric = {
   highlight?: boolean;
 };
 
+export type JourneyStage = {
+  label: string;
+  description: string;
+};
+
+export type ExternalReference = {
+  label: string;
+  href: string;
+  caption: string;
+};
+
 export type CaseStudy = {
   slug: string;
   company: string;
@@ -23,5 +34,7 @@ export type CaseStudy = {
   outcome: string;
   reflection?: string;
   metrics: Metric[];
+  journey?: JourneyStage[];
+  reference?: ExternalReference;
   accent: Accent;
 };

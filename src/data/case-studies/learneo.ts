@@ -29,5 +29,12 @@ export const learneo: CaseStudy = {
     { label: "+10% match accuracy" },
     { label: "+3% revenue" },
   ],
+  journey: [
+    { label: "Search", description: "Student searches for course-specific materials or asks a question." },
+    { label: "Discover", description: "Sees study documents shared by students at their own school." },
+    { label: "Get Unstuck", description: "Uses Ask AI or an expert tutor for step-by-step help." },
+    { label: "Go Deeper", description: "Pulls textbook solutions and literature guides for related coursework." },
+    { label: "Upgrade", description: "Subscribes to Premier or Premier Plus for unlimited access." },
+  ],
   accent: "amber",
 };

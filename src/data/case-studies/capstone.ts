@@ -25,5 +25,12 @@ export const capstone: CaseStudy = {
     { label: "AI-generated 90-day personalized plan" },
     { label: "24-exercise course, solo-built" },
   ],
+  journey: [
+    { label: "Land", description: "Arrives at the value proposition and clicks \"Begin the Course.\"" },
+    { label: "Set a Goal", description: "Defines a personal goal that all 24 exercises get reframed around." },
+    { label: "Progress", description: "Works through 15-minute sessions, paced across 12 weeks, tracking 0/24." },
+    { label: "Reflect", description: "Logs session notes, synced across devices." },
+    { label: "Go Deeper (Paid)", description: "A 5-step intake feeds an AI strategist that generates a 90-day plan." },
+  ],
   accent: "blue",
 };

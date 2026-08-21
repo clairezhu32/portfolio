@@ -22,5 +22,17 @@ export const meta: CaseStudy = {
     { label: "~30% revenue increase", highlight: true },
     { label: "Method scaled globally across BI partner teams" },
   ],
+  journey: [
+    { label: "Discovery", description: "Shopper sees a cross-border product via a sponsored Instagram or Facebook post." },
+    { label: "Evaluation", description: "Visits the merchant's storefront to browse the collection and compare options." },
+    { label: "Purchase", description: "Completes checkout in-platform without leaving the app." },
+    { label: "Post-Purchase", description: "Follows up with the merchant via Business Chat for support or related products." },
+  ],
+  reference: {
+    label: "Meta's cross-border ads product today (PDF)",
+    href: "/case-studies/meta-cross-border-overview.pdf",
+    caption:
+      "Meta's own current marketing overview of the cross-border commerce ads product, published well after my 2017–2018 tenure — included for product context, not as evidence of my specific work.",
+  },
   accent: "blue",
 };

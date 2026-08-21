@@ -30,5 +30,12 @@ export const upstart: CaseStudy = {
     { label: "$600K+ annual savings from underwriting automation" },
     { label: "30% of approved loans now automated" },
   ],
+  journey: [
+    { label: "Check Rate", description: "10-minute soft credit check — doesn't affect the homeowner's credit score." },
+    { label: "Full Application", description: "Accept the rate, submit for a hard credit inquiry and verification." },
+    { label: "Underwriting", description: "Automated decisioning covers 30% of approved cases; the rest go to manual review." },
+    { label: "Sign", description: "Remote online notary closing — no in-person appointment needed." },
+    { label: "Fund", description: "Closing and funding within a few business days of approval." },
+  ],
   accent: "amber",
 };

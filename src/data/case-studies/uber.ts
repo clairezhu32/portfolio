@@ -22,5 +22,12 @@ export const uber: CaseStudy = {
     { label: "Experimentation standard adopted org-wide", highlight: true },
     { label: "Real-time KPI scorecards adopted by leadership" },
   ],
+  journey: [
+    { label: "Sign Up", description: "A company creates a free Uber for Business account." },
+    { label: "Configure", description: "Set up shared team accounts and expense policies." },
+    { label: "Book & Pay", description: "Arrange and pay for rides for employees or customers." },
+    { label: "Expense Automatically", description: "No manual receipts — rides are billed centrally." },
+    { label: "Grow", description: "Businesses issue ride vouchers to drive foot traffic." },
+  ],
   accent: "green",
 };
