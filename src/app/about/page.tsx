@@ -27,7 +27,7 @@ export default function AboutPage() {
               and consumer tech, I&apos;m now channeling that into building AI-powered products
               that solve real problems for real people. My edge is the full arc — from raw data
               and causal inference to product strategy, cross-functional execution, and
-              measurable business impact. I don&apos;t just analyze systems; I diagnose them,
+              measurable business impact. I analyze systems; I diagnose them,
               redesign them, and drive the decisions that make them better.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
