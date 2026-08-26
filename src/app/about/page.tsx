@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
+import { AboutApproachSection } from "@/components/about/approach-section";
 import { AboutBuildingSection } from "@/components/about/building-section";
+import { AboutImpactSection } from "@/components/about/impact-section";
 
 export const metadata: Metadata = {
   title: "About Claire Zhu",
@@ -49,7 +51,9 @@ export default function AboutPage() {
 
         <section className="py-16">
           <div className="mx-auto max-w-3xl space-y-16 px-6">
+            <AboutApproachSection />
             <AboutBuildingSection />
+            <AboutImpactSection />
 
             <blockquote className="border-l-2 border-amber/40 pl-6 font-display text-2xl italic text-muted">
               &quot;Turn data into products that matter.&quot;
