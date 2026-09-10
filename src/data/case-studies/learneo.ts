@@ -29,6 +29,16 @@ export const learneo: CaseStudy = {
     { label: "+10% match accuracy" },
     { label: "+3% revenue" },
   ],
+  evidenceChart: {
+    title: "Better matching translated into revenue",
+    description: "The rebuild improved the share of student requests matched to relevant resources and produced a measurable business result.",
+    type: "comparison",
+    max: 60,
+    data: [
+      { label: "Resource match rate", baseline: 50, baselineDisplay: "50%", value: 55, display: "55% · 10% relative lift" },
+    ],
+    note: "The matching gain was accompanied by an approximately 3% revenue uplift. Team capacity scaled from 2 to 10 during the broader analytics transformation.",
+  },
   journey: [
     { label: "Search", description: "Student searches for course-specific materials or asks a question." },
     { label: "Discover", description: "Sees study documents shared by students at their own school." },

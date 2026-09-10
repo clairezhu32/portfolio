@@ -22,6 +22,16 @@ export const zynga: CaseStudy = {
     { label: "+40% ads match rate", highlight: true },
     { label: "Scorecard template adopted for other launches" },
   ],
+  evidenceChart: {
+    title: "The ads funnel improved after the root cause was fixed",
+    description: "Instrumentation and player-funnel analysis connected technical decay to the ad-serving outcome.",
+    type: "comparison",
+    max: 80,
+    data: [
+      { label: "Ads fill / match rate", baseline: 50, baselineDisplay: "50%", value: 70, display: "70% · +20pp" },
+    ],
+    note: "A move from 50% to 70% is a 20-point absolute increase and a 40% relative lift. The 32-metric launch scorecard covered engagement, retention, monetization, fill rate, eCPM, and frequency.",
+  },
   journey: [
     { label: "Discover", description: "Downloads via the App Store, Google Play, Facebook, or Amazon." },
     { label: "Onboard", description: "Tutorial introduces farming, cooking, and the island setting." },

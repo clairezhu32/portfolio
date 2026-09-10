@@ -22,6 +22,20 @@ export const uber: CaseStudy = {
     { label: "Experimentation standard adopted org-wide", highlight: true },
     { label: "Real-time KPI scorecards adopted by leadership" },
   ],
+  evidenceChart: {
+    title: "The scorecard made funnel loss visible",
+    description: "A representative executive view connected acquisition, activation, and first use instead of reporting each metric in isolation.",
+    type: "funnel",
+    max: 100,
+    data: [
+      { label: "Landing", value: 100, display: "100%" },
+      { label: "Start signup", value: 72, display: "72%" },
+      { label: "Complete form", value: 55, display: "55%" },
+      { label: "Email verified", value: 40, display: "40%" },
+      { label: "First ride", value: 26, display: "26%" },
+    ],
+    note: "Funnel values reflect the portfolio example used to demonstrate the scorecard structure. The broader measurement system used 28-day rolling windows and New Users / MAU to monitor sustainable growth.",
+  },
   journey: [
     { label: "Sign Up", description: "A company creates a free Uber for Business account." },
     { label: "Configure", description: "Set up shared team accounts and expense policies." },

@@ -30,6 +30,17 @@ export const upstart: CaseStudy = {
     { label: "$600K+ annual savings from underwriting automation" },
     { label: "30% of approved loans now automated" },
   ],
+  evidenceChart: {
+    title: "The funnel moved—and underwriting got faster",
+    description: "A compact view of the two core outcomes from the experimentation and automation roadmap.",
+    type: "comparison",
+    max: 160,
+    data: [
+      { label: "Lower-funnel conversion", baseline: 100, baselineDisplay: "Index 100", value: 150, display: "Index 150 · ~50% lift" },
+      { label: "Decision time", baseline: 100, baselineDisplay: "Index 100", value: 62, display: "Index 62 · 38% faster" },
+    ],
+    note: "Indexed to the pre-change baseline because confidential absolute funnel rates are not shown. Additional outcome: 30% of approved loans automated, producing $600K+ in annual savings.",
+  },
   journey: [
     { label: "Check Rate", description: "10-minute soft credit check — doesn't affect the homeowner's credit score." },
     { label: "Full Application", description: "Accept the rate, submit for a hard credit inquiry and verification." },
