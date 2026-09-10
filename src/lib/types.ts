@@ -5,6 +5,23 @@ export type Metric = {
   highlight?: boolean;
 };
 
+export type ChartDatum = {
+  label: string;
+  value: number;
+  display: string;
+  baseline?: number;
+  baselineDisplay?: string;
+};
+
+export type EvidenceChart = {
+  title: string;
+  description: string;
+  type: "comparison" | "funnel" | "bars";
+  max: number;
+  data: ChartDatum[];
+  note?: string;
+};
+
 export type JourneyStage = {
   label: string;
   description: string;
@@ -70,6 +87,7 @@ export type CaseStudy = {
   outcome: string;
   reflection?: string;
   metrics: Metric[];
+  evidenceChart?: EvidenceChart;
   journey?: JourneyStage[];
   reference?: ExternalReference;
   personas?: Persona[];

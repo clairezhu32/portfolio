@@ -5,6 +5,7 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { CaseStudyHeader } from "@/components/case-study/header";
 import { CaseStudyMetrics } from "@/components/case-study/metrics";
+import { CaseStudyEvidenceChart } from "@/components/case-study/evidence-chart";
 import { CaseStudyJourney } from "@/components/case-study/journey-map";
 import { CaseStudyNarrative } from "@/components/case-study/narrative";
 import { CaseStudyPersonas } from "@/components/case-study/personas";
@@ -45,6 +46,7 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
         <section className="py-16">
           <div className="mx-auto max-w-3xl px-6">
             <CaseStudyMetrics study={study} />
+            <CaseStudyEvidenceChart study={study} />
           </div>
           <div className="mx-auto mt-12 max-w-5xl px-6">
             <CaseStudyJourney study={study} />

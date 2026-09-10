@@ -22,6 +22,16 @@ export const meta: CaseStudy = {
     { label: "~30% revenue increase", highlight: true },
     { label: "Method scaled globally across BI partner teams" },
   ],
+  evidenceChart: {
+    title: "Causal lift, not a before-and-after correlation",
+    description: "The analysis compared the observed post-launch revenue path with the counterfactual estimated from matched advertisers.",
+    type: "comparison",
+    max: 140,
+    data: [
+      { label: "Revenue outcome", baseline: 100, baselineDisplay: "Counterfactual index 100", value: 130, display: "Observed index 130 · ~30% lift" },
+    ],
+    note: "Schematic indexed view of the measured effect; raw advertiser revenue is confidential. The framework used regression adjustment and propensity score matching to address selection bias.",
+  },
   journey: [
     { label: "Discovery", description: "Shopper sees a cross-border product via a sponsored Instagram or Facebook post." },
     { label: "Evaluation", description: "Visits the merchant's storefront to browse the collection and compare options." },

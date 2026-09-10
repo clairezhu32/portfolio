@@ -25,6 +25,18 @@ export const capstone: CaseStudy = {
     { label: "AI-generated 90-day personalized plan" },
     { label: "24-exercise course, solo-built" },
   ],
+  evidenceChart: {
+    title: "One goal becomes a complete execution system",
+    description: "The product connects structured intake, weekly action planning, and mindset support in one flow.",
+    type: "bars",
+    max: 12,
+    data: [
+      { label: "Goal-discovery questions", value: 9, display: "9" },
+      { label: "Weekly action milestones", value: 12, display: "12" },
+      { label: "Guided Lucky Exercises", value: 12, display: "12" },
+    ],
+    note: "This is a product-structure chart, not a claim about user outcomes. The next measurement step is completion, return rate, and weekly task follow-through.",
+  },
   journey: [
     { label: "Land", description: "Arrives at a clear promise: turn one meaningful goal into a personalized 90-day plan.", emotion: "Curious" },
     { label: "Define a Goal", description: "Clarifies the goal, motivation, constraints, and context that should shape the plan.", emotion: "Hopeful" },
